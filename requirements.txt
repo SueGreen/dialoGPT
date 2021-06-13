@@ -6,3 +6,5 @@ torch
 torchvision
 pycrypto
 scikit-learn
+jupyter
+
