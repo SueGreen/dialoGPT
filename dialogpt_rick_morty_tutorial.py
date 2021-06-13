@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Fine-tuning the library models for language modeling on a text file (GPT, GPT-2, BERT, RoBERTa).
 GPT and GPT-2 are fine-tuned using a causal language modeling (CLM) loss while BERT and RoBERTa are fine-tuned
@@ -62,12 +63,12 @@ class Args():
         self.config_name = 'microsoft/DialoGPT-small'
         self.tokenizer_name = 'microsoft/DialoGPT-small'
         self.cache_dir = 'cached'
-        self.block_size = 512
+        self.block_size = 16 #512
         self.do_train = True
         self.do_eval = True
         self.evaluate_during_training = False
-        self.per_gpu_train_batch_size = 4
-        self.per_gpu_eval_batch_size = 4
+        self.per_gpu_train_batch_size = 2 #4
+        self.per_gpu_eval_batch_size = 2 #4
         self.gradient_accumulation_steps = 1
         self.learning_rate = 5e-5
         self.weight_decay = 0.0

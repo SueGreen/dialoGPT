@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from transformers import AutoModelWithLMHead, AutoTokenizer
 import torch
 
